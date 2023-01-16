@@ -1,10 +1,33 @@
 <template>
-  <v-app>
+  <v-app :theme="theme">
+    <v-app-bar>
+      <v-spacer></v-spacer>
+
+      <v-btn
+        :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+        @click="onClick"
+      >Toggle Theme</v-btn>
+    </v-app-bar>
+
     <v-main>
-      <router-view/>
+      <v-container>Content area</v-container>
     </v-main>
   </v-app>
+
+  <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
+  
 </template>
+
+<script setup>
+  import { ref } from 'vue'
+
+  const theme = ref('light')
+
+  function onClick () {
+    theme.value = theme.value === 'light' ? 'dark' : 'light'
+  }
+</script>
+
 
 <script>
 
