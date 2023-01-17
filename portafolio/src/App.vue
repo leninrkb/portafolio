@@ -17,6 +17,7 @@
       <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
         <div id="contenido">
           <div id="slider">
+            <h2>Aqui van mis proyectos</h2>
             <v-carousel show-arrows="hover">
               <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
 
