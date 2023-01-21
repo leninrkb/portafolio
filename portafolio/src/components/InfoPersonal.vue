@@ -1,24 +1,30 @@
 <template>
     <v-container>
         <v-row no-gutters>
-            <v-col>
-                <v-card variant="tonal" class="grid-margin">
-                    <v-img src="../assets/img/profile.png" width="150"></v-img>
-                </v-card>
+            <v-col class="d-flex justify-center">
+                <div data-aos="fade-right">
+                    <v-card class="grid-margin no-backround">
+                        <v-img id="img-perfil" src="../assets/img/profile.png" width="160"></v-img>
+                    </v-card>
+                </div>
             </v-col>
             <v-col>
-                    <v-card class="grid-margin" variant="tonal"  title="Sobre mi" 
-                        v-bind:text="descripcion">
-                        </v-card>
+                <div data-aos="fade-left">
+                    <v-card class="grid-margin" variant="tonal" title="Sobre mi" v-bind:text="descripcion">
+                    </v-card>
+                </div>
             </v-col>
         </v-row>
         <v-row no-gutters>
-            <v-col>
-                <v-card variant="tonal" class="grid-margin">
-                    <v-img src="../assets/img/requirements.png" width="150"></v-img>
-                </v-card>
+            <v-col class="d-flex justify-center">
+                <div data-aos="fade-right">
+                    <v-card class="grid-margin no-backround">
+                        <v-img id="img-preparacion" src="../assets/img/requirements.png" width="180"></v-img>
+                    </v-card>
+                </div>
             </v-col>
             <v-col>
+                <div data-aos="fade-left">
                     <v-card class="grid-margin" variant="tonal" title="Preparacion">
                         <v-timeline density="compact" align="start">
                             <v-timeline-item v-for="message in messages" :key="message.time" :dot-color="message.color"
@@ -34,18 +40,23 @@
                             </v-timeline-item>
                         </v-timeline>
                     </v-card>
+                </div>
             </v-col>
         </v-row>
         <v-row no-gutters>
-            <v-col>
-                <v-card variant="tonal" class="grid-margin">
-                    <v-img src="../assets/img/cv.png" width="150"></v-img>
-                </v-card>
+            <v-col class="d-flex justify-center">
+                <div data-aos="fade-right">
+                    <v-card class="grid-margin no-backround">
+                        <v-img class="izquierda" src="../assets/img/cv.png" width="150"></v-img>
+                    </v-card>
+                </div>
             </v-col>
             <v-col>
-                    <v-card class="grid-margin" variant="tonal"  title="Mi Curriculum" subtitle="This is a subtitle"
+                <div data-aos="fade-left">
+                    <v-card class="grid-margin" variant="tonal" title="Mi Curriculum" subtitle="This is a subtitle"
                         v-bind:text="descripcion">
                     </v-card>
+                </div>
             </v-col>
         </v-row>
     </v-container>
@@ -86,7 +97,24 @@ export default {
 </script>
 
 <style>
-.grid-margin{
+.grid-margin {
     margin: 15px;
+}
+
+.no-backround {
+    background-color: transparent;
+}
+
+.contenedor img.izquierda {
+    transform: translateX(-100px);
+}
+
+.contenedor img.derecha {
+    transform: translateX(100px);
+}
+
+.contenedor img.visible {
+    opacity: 1;
+    transform: scale(1) translateX(0);
 }
 </style>

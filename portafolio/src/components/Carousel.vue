@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="3000">
         <v-card title="Mis proyectos" variant="tonal"></v-card>
         <v-card variant="tonal">
             <v-carousel show-arrows="hover">

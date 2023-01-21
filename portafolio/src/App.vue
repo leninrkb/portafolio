@@ -45,7 +45,7 @@
 
 </template>
 
-<script>
+<script >
 export default {
   name: 'App',
   data: () => ({
@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<script setup>
+<script setup >
 import { ref } from 'vue'
 import Footer from './components/Footer.vue'
 import Carousel from './components/Carousel.vue';
@@ -63,13 +63,24 @@ import HabilidadesDomina from './components/HabilidadesDomina.vue'
 import Experiencia from './components/Experiencia.vue'
 import Contacto from './components/Contacto.vue'
 
+import { onMounted } from "vue";
+import AOS from "aos";
+
+onMounted(() => {
+    AOS.init();
+})
+
 const theme = ref('dark')
 function cambiarTema() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
 }
+
 </script>
 
 <style>
+html{
+  scroll-behavior: smooth;
+}
 .margen {
   padding: 10px;
 }
