@@ -17,14 +17,21 @@
       <v-main>
         <!-- <v-container> -->
         <v-parallax src="./assets/img/fondo.jpg">
-          <div class="margen">
             <div class="espacio-abajo">
               <InfoPersonal></InfoPersonal>
             </div>
-            <div>
+            <div class="espacio-abajo espacios-laterales">
               <Carousel></Carousel>
             </div>
-          </div>
+            <div class="espacio-abajo espacios-laterales">
+              <HabilidadesDomina></HabilidadesDomina>
+            </div>
+            <div class="espacio-abajo espacios-laterales">
+              <Experiencia></Experiencia>
+            </div>
+            <div class="espacio-abajo espacios-laterales">
+              <Contacto></Contacto>
+            </div>
         </v-parallax>
         <!-- </v-container> -->
       </v-main>
@@ -35,7 +42,6 @@
       </div>
     </footer>
   </v-app>
-
 
 </template>
 
@@ -53,6 +59,9 @@ import { ref } from 'vue'
 import Footer from './components/Footer.vue'
 import Carousel from './components/Carousel.vue';
 import InfoPersonal from './components/InfoPersonal.vue';
+import HabilidadesDomina from './components/HabilidadesDomina.vue'
+import Experiencia from './components/Experiencia.vue'
+import Contacto from './components/Contacto.vue'
 
 const theme = ref('dark')
 function cambiarTema() {
@@ -64,8 +73,14 @@ function cambiarTema() {
 .margen {
   padding: 10px;
 }
-.espacio-abajo{
+
+.espacio-abajo {
   margin-bottom: 20px;
+}
+
+.espacios-laterales {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 </style>
 

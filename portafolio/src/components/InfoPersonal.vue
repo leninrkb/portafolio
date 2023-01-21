@@ -78,7 +78,7 @@ export default {
                 from: 'IA',
                 message: 'Desarrollo de algoritmos de inteligencia artificial y manejo de tecnologias como opencv, tensorflow y matlab',
                 time: '2022',
-                color: 'green',
+                color: 'blue',
             },
         ],
     }),
