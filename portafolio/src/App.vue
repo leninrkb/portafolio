@@ -17,21 +17,22 @@
       <v-main>
         <!-- <v-container> -->
         <v-parallax src="./assets/img/fondo.jpg">
-            <div class="espacio-abajo">
-              <InfoPersonal></InfoPersonal>
-            </div>
-            <div class="espacio-abajo espacios-laterales">
-              <Carousel></Carousel>
-            </div>
-            <div class="espacio-abajo espacios-laterales">
-              <HabilidadesDomina></HabilidadesDomina>
-            </div>
-            <div class="espacio-abajo espacios-laterales">
-              <Experiencia></Experiencia>
-            </div>
-            <div class="espacio-abajo espacios-laterales">
-              <Contacto></Contacto>
-            </div>
+          <Logo></Logo>
+          <div class="espacio-abajo">
+            <InfoPersonal></InfoPersonal>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Carousel></Carousel>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <HabilidadesDomina></HabilidadesDomina>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Experiencia></Experiencia>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Contacto></Contacto>
+          </div>
         </v-parallax>
         <!-- </v-container> -->
       </v-main>
@@ -62,12 +63,13 @@ import InfoPersonal from './components/InfoPersonal.vue';
 import HabilidadesDomina from './components/HabilidadesDomina.vue'
 import Experiencia from './components/Experiencia.vue'
 import Contacto from './components/Contacto.vue'
+import Logo from './components/Logo.vue';
 
 import { onMounted } from "vue";
 import AOS from "aos";
 
 onMounted(() => {
-    AOS.init();
+  AOS.init();
 })
 
 const theme = ref('dark')
@@ -78,9 +80,10 @@ function cambiarTema() {
 </script>
 
 <style>
-html{
+html {
   scroll-behavior: smooth;
 }
+
 .margen {
   padding: 10px;
 }
@@ -90,8 +93,8 @@ html{
 }
 
 .espacios-laterales {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 </style>
 
