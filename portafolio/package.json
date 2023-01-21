@@ -10,6 +10,7 @@
     "@mdi/font": "5.9.55",
     "aos": "^2.3.4",
     "core-js": "^3.8.3",
+    "magicmouse.js": "^1.2.1",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",

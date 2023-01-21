@@ -24,7 +24,7 @@
           <div class="espacio-abajo espacios-laterales-medio">
             <Carousel></Carousel>
           </div>
-          <div class="espacio-abajo espacios-laterales">
+          <div class="espacio-abajo espacios-laterales" data-aos="fade-right">
             <HabilidadesDomina></HabilidadesDomina>
           </div>
           <div class="espacio-abajo espacios-laterales">
@@ -67,10 +67,23 @@ import Logo from './components/Logo.vue';
 
 import { onMounted } from "vue";
 import AOS from "aos";
+import { magicMouse } from 'magicmouse.js'
 
 onMounted(() => {
   AOS.init();
 })
+
+// magicmouse start
+const options = {
+	"cursorOuter": "circle-basic",
+	"hoverEffect": "circle-move",
+	"hoverItemMove": false,
+	"defaultCursor": false,
+	"outerWidth": 30,
+	"outerHeight": 30
+      };
+    magicMouse(options);
+// magicmouse end
 
 const theme = ref('dark')
 function cambiarTema() {
@@ -96,10 +109,12 @@ html {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .espacios-laterales-medio {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 </style>
 
 
