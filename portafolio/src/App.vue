@@ -1,6 +1,6 @@
 <template>
   <v-app :theme="theme">
-    <div>
+    <div data-aos="fade-down" data-aos-duration="2000">
       <v-app-bar :elevation="2" rounded>
         <template v-slot:append>
           <v-btn icon="mdi-heart"></v-btn>
@@ -13,7 +13,7 @@
           @click="cambiarTema()"></v-btn>
       </v-app-bar>
     </div>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="2000">
       <v-main>
         <!-- <v-container> -->
         <v-parallax src="./assets/img/fondo.jpg">
@@ -21,7 +21,7 @@
           <div class="espacio-abajo">
             <InfoPersonal></InfoPersonal>
           </div>
-          <div class="espacio-abajo espacios-laterales">
+          <div class="espacio-abajo espacios-laterales-medio">
             <Carousel></Carousel>
           </div>
           <div class="espacio-abajo espacios-laterales">
@@ -95,6 +95,10 @@ html {
 .espacios-laterales {
   margin-left: 20px;
   margin-right: 20px;
+}
+.espacios-laterales-medio {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 </style>
 

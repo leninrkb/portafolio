@@ -3,9 +3,9 @@
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
                 <div data-aos="fade-right">
-                    <v-card class="grid-margin no-backround">
-                        <v-img id="img-perfil" src="../assets/img/profile.png" width="160"></v-img>
-                    </v-card>
+
+                    <v-img id="img-perfil" src="../assets/img/profile.png" width="160"></v-img>
+
                 </div>
             </v-col>
             <v-col>
@@ -18,9 +18,9 @@
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
                 <div data-aos="fade-right">
-                    <v-card class="grid-margin no-backround">
-                        <v-img id="img-preparacion" src="../assets/img/requirements.png" width="180"></v-img>
-                    </v-card>
+
+                    <v-img id="img-preparacion" src="../assets/img/requirements.png" width="180"></v-img>
+
                 </div>
             </v-col>
             <v-col>
@@ -46,9 +46,8 @@
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
                 <div data-aos="fade-right">
-                    <v-card class="grid-margin no-backround">
-                        <v-img class="izquierda" src="../assets/img/cv.png" width="150"></v-img>
-                    </v-card>
+                    <v-img class="izquierda" src="../assets/img/cv.png" width="150"></v-img>
+
                 </div>
             </v-col>
             <v-col>
