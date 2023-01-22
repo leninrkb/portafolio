@@ -12,8 +12,10 @@
     "core-js": "^3.8.3",
     "magicmouse.js": "^1.2.1",
     "roboto-fontface": "*",
+    "smooth-scrollbar": "^8.8.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vue-smooth-scrollbar": "^1.0.3",
     "vuetify": "^3.0.0-beta.0",
     "vuex": "^4.0.0",
     "webfontloader": "^1.0.0"

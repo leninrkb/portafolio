@@ -2,30 +2,27 @@
     <v-container>
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
-                <div data-aos="fade-right">
-
-                    <v-img id="img-perfil" src="../assets/img/profile.png" width="160"></v-img>
-
+                <div data-aos="fade-right" v-bind:data-aos-duration="duracion">
+                    <v-img id="img-perfil" src="../assets/img/profile.png" width="180"></v-img>
                 </div>
             </v-col>
             <v-col>
-                <div data-aos="fade-left">
-                    <v-card class="grid-margin" variant="tonal" title="Sobre mi" v-bind:text="descripcion">
+                <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
+                    <v-card class="grid-margin blur" variant="tonal" title="Sobre mi" v-bind:text="descripcion">
                     </v-card>
                 </div>
             </v-col>
         </v-row>
+
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
-                <div data-aos="fade-right">
-
+                <div data-aos="fade-right" v-bind:data-aos-duration="duracion">
                     <v-img id="img-preparacion" src="../assets/img/requirements.png" width="180"></v-img>
-
                 </div>
             </v-col>
             <v-col>
-                <div data-aos="fade-left">
-                    <v-card class="grid-margin" variant="tonal" title="Preparacion">
+                <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
+                    <v-card class="grid-margin blur" variant="tonal" title="Preparacion">
                         <v-timeline density="compact" align="start">
                             <v-timeline-item v-for="message in messages" :key="message.time" :dot-color="message.color"
                                 size="x-small">
@@ -43,16 +40,16 @@
                 </div>
             </v-col>
         </v-row>
+
         <v-row no-gutters>
             <v-col class="d-flex justify-center">
-                <div data-aos="fade-right">
-                    <v-img class="izquierda" src="../assets/img/cv.png" width="150"></v-img>
-
+                <div data-aos="fade-right" v-bind:data-aos-duration="duracion">
+                    <v-img class="izquierda" src="../assets/img/cv.png" width="180"></v-img>
                 </div>
             </v-col>
             <v-col>
-                <div data-aos="fade-left">
-                    <v-card class="grid-margin" variant="tonal" title="Mi Curriculum" subtitle="This is a subtitle"
+                <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
+                    <v-card class="grid-margin blur" variant="tonal" title="Mi Curriculum" subtitle="This is a subtitle"
                         v-bind:text="descripcion">
                     </v-card>
                 </div>
@@ -64,6 +61,7 @@
 <script>
 export default {
     data: () => ({
+        duracion: 1000,
         descripcion: '"¡Hola! Mi nombre es Lenin. Como estudiante apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y también tengo experiencia en Inteligencia Artificial. ¡Estoy emocionado de compartir mi experiencia y habilidades con ustedes y espero trabajar en proyectos emocionantes en el futuro!"',
         messages: [
             {
@@ -102,18 +100,5 @@ export default {
 
 .no-backround {
     background-color: transparent;
-}
-
-.contenedor img.izquierda {
-    transform: translateX(-100px);
-}
-
-.contenedor img.derecha {
-    transform: translateX(100px);
-}
-
-.contenedor img.visible {
-    opacity: 1;
-    transform: scale(1) translateX(0);
 }
 </style>

@@ -6,6 +6,9 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 // importing AOS css style globally
 import 'aos/dist/aos.css'
+import './styles.css'
+
+
 
 loadFonts()
 createApp(App)
