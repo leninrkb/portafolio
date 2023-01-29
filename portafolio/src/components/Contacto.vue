@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-left" :data-aos-duration="duracion">
+    <div data-aos="fade-right" :data-aos-duration="duracion">
         <v-row no-gutters>
             <v-card class="todo-ancho blur" title="Contacto" variant="tonal" :text="texto">
                 <v-card class="transp margen">
