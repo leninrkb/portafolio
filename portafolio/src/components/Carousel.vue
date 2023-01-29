@@ -3,18 +3,14 @@
         <v-card class="oscuro" title="Proyectos" variant="tonal" :text="subtitle">
             <v-card variant="tonal" class="oscuro margen">
                 <v-carousel show-arrows="hover" :interval="intervalo" cycle>
-                    <v-carousel-item v-for="img in images" :src="img.src" cover>
-                        <div class="d-flex fill-height justify-center align-center">
-                            <div class="text-h2">
-                                {{ img.title }}
-                            </div>
+                    <v-carousel-item v-for="img in images" :src="img.src">
+                        <div class="text-h3 text-white bottom-0 left-0 text-xl oscuro">
+                            {{ img.title }}
                         </div>
                     </v-carousel-item>
                 </v-carousel>
             </v-card>
-
         </v-card>
-
     </div>
 </template>
 <script>
@@ -22,34 +18,22 @@ export default {
     name: 'Carousel'
     , data() {
         return {
-            subtitle:'Estos son proyectos que he realizado tanto en solitario como en colaboración, aquí presento una muestra del trabajo y dedicación mios y de mis colegas a cada uno de ellos',
+            subtitle: 'Estos son proyectos que he realizado tanto en solitario como en colaboración, aquí presento una muestra del trabajo y dedicación mios y de mis colegas a cada uno de ellos',
             images: [
                 {
-                    src: require('../assets/img/img_carousel/albedo.jpg')
-                    , title: 'RIKO'
-                }
-                , {
-                    src: require('../assets/img/img_carousel/lala.png')
-                    , title: 'cosita'
-                }
-                , {
-                    src: require('../assets/img/img_carousel/naberalGamma.png')
-                    , title: 'cosa bien hecha'
-                }
-                , {
-                    src: require('../assets/img/img_carousel/natsumi.png')
-                    , title: 'cosa hermosa'
-                }
-                , {
-                    src: require('../assets/img/img_carousel/thoka.png')
-                    , title: 'awww <3'
-                }
-                , {
-                    src: require('../assets/img/img_carousel/to4.jpg')
-                    , title: 'mi amor'
+                    src: require('../assets/img/img_carousel/p_aes.png')
+                    , title: 'Practica cifrado AES'
                 }
             ],
-            intervalo: 10000
+            intervalo: 10000,
+            colors: [
+                'primary',
+                'secondary',
+                'yellow darken-2',
+                'red',
+                'orange',
+            ],
+            model: 0,
         }
     },
     props: {
