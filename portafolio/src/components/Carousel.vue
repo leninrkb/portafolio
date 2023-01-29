@@ -1,17 +1,20 @@
 <template>
     <div data-aos="fade-up" :data-aos-duration="duracion">
-        <v-card class="blur" title="Mis proyectos" variant="tonal"></v-card>
-        <v-card variant="tonal">
-            <v-carousel show-arrows="hover" :interval="intervalo" cycle>
-                <v-carousel-item v-for="img in images" :src="img.src" cover>
-                    <div class="d-flex fill-height justify-center align-center">
-                        <div class="text-h2">
-                            {{ img.title }}
+        <v-card class="oscuro" title="Mis proyectos" variant="tonal">
+            <v-card variant="tonal" class="oscuro margen">
+                <v-carousel show-arrows="hover" :interval="intervalo" cycle>
+                    <v-carousel-item v-for="img in images" :src="img.src" cover>
+                        <div class="d-flex fill-height justify-center align-center">
+                            <div class="text-h2">
+                                {{ img.title }}
+                            </div>
                         </div>
-                    </div>
-                </v-carousel-item>
-            </v-carousel>
+                    </v-carousel-item>
+                </v-carousel>
+            </v-card>
+
         </v-card>
+
     </div>
 </template>
 <script>
@@ -45,13 +48,13 @@ export default {
                     , title: 'mi amor'
                 }
             ],
-            intervalo:10000
+            intervalo: 10000
         }
     },
-    props:{
-        duracion:{
-            type:Number,
-            required:true
+    props: {
+        duracion: {
+            type: Number,
+            required: true
         }
     }
 

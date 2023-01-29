@@ -10,6 +10,7 @@ import './styles.css'
 
 
 
+
 loadFonts()
 createApp(App)
   .use(router)

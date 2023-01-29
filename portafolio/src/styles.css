@@ -1,5 +1,8 @@
 .blur{
-    /* backdrop-filter: blur(5px); */
+    backdrop-filter: blur(10px);
+}
+.oscuro{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .margen {
@@ -8,4 +11,8 @@
 
 .transp {
     background-color: transparent;
+}
+
+.txt-medio{
+    font-size: 100px;
 }

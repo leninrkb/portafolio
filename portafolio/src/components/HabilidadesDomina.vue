@@ -1,7 +1,7 @@
 <template>
     <div data-aos="fade-right" :data-aos-duration="duracion">
         <v-row no-gutters>
-            <v-card class="blur" title="Tecnologias" variant="tonal" :text="texto">
+            <v-card class="oscuro" title="Tecnologias" variant="tonal" :text="texto">
                 <div class="margen">
                     <v-card class="transp">
                         <section class="carousel">

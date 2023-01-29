@@ -1,4 +1,5 @@
 <template>
+
   <v-app :theme="theme">
     <!-- <div data-aos="fade-down" data-aos-duration="2000">
       <v-app-bar :elevation="2" rounded>
@@ -15,35 +16,40 @@
     </div> -->
 
     <v-main>
-      <v-parallax src="../assets/img/fondo.jpg">
-        <Logo :duracion=" duracion"></Logo>
-        <div class="espacio-abajo">
-          <InfoPersonal :duracion="duracion"></InfoPersonal>
-        </div>
-        <div class="espacio-abajo espacios-laterales">
-          <Carousel :duracion="duracion"></Carousel>
-        </div>
-        <div class="espacio-abajo espacios-laterales">
-          <HabilidadesDomina :duracion="duracion"></HabilidadesDomina>
-        </div>
-        <div class="espacio-abajo espacios-laterales">
-          <Experiencia :duracion="duracion"></Experiencia>
-        </div>
-        <div class="espacio-abajo espacios-laterales">
-          <Contacto :duracion="duracion"></Contacto>
-        </div>
-      </v-parallax>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" duration="3000">
+        <v-parallax src="../assets/img/wall2.jpg">
+          <div class="espacio-abajo">
+            <TypeEffect></TypeEffect>
+          </div>
+          <div class="espacio-abajo">
+            <InfoPersonal :duracion="duracion"></InfoPersonal>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Carousel :duracion="duracion"></Carousel>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <HabilidadesDomina :duracion="duracion"></HabilidadesDomina>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Experiencia :duracion="duracion"></Experiencia>
+          </div>
+          <div class="espacio-abajo espacios-laterales">
+            <Contacto :duracion="duracion"></Contacto>
+          </div>
+        </v-parallax>
+      </div>
     </v-main>
     <Footer></Footer>
   </v-app>
+
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'HomeView',
-  data(){
-    return{
+  data() {
+    return {
       duracion: 1000
     }
   }
@@ -59,6 +65,7 @@ import HabilidadesDomina from '@/components/HabilidadesDomina.vue'
 import Experiencia from '@/components/Experiencia.vue'
 import Contacto from '@/components/Contacto.vue'
 import Logo from '@/components/Logo.vue';
+import TypeEffect from '@/components/Adicionales/TypeEffect.vue';
 import { onMounted } from "vue";
 import AOS from "aos";
 import { magicMouse } from 'magicmouse.js'
@@ -84,6 +91,7 @@ function cambiarTema() {
 }
 </script>
 
+
 <style>
 #scroll-container {
   width: 100%;
@@ -107,4 +115,6 @@ function cambiarTema() {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+
 </style>

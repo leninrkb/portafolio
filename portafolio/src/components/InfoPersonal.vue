@@ -8,7 +8,7 @@
             </v-col>
             <v-col>
                 <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
-                    <v-card class="grid-margin blur" variant="tonal" title="Sobre mi" v-bind:text="descripcion">
+                    <v-card class="grid-margin oscuro txt-medio" variant="tonal" title="Sobre mi" v-bind:text="descripcion">
                     </v-card>
                 </div>
             </v-col>
@@ -22,7 +22,7 @@
             </v-col>
             <v-col>
                 <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
-                    <v-card class="grid-margin blur" variant="tonal" title="Preparacion">
+                    <v-card class="grid-margin oscuro" variant="tonal" title="Preparacion">
                         <v-timeline density="compact" align="start">
                             <v-timeline-item v-for="message in messages" :key="message.time" :dot-color="message.color"
                                 size="x-small">
@@ -49,7 +49,7 @@
             </v-col>
             <v-col>
                 <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
-                    <v-card class="grid-margin blur" variant="tonal" title="Mi Curriculum"  v-bind:text="des_cv">  </v-card>
+                    <v-card class="grid-margin oscuro" variant="tonal" title="Mi Curriculum"  v-bind:text="des_cv">  </v-card>
                 </div>
             </v-col>
         </v-row>

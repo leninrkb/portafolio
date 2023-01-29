@@ -1,11 +1,11 @@
 <template>
     <div data-aos="fade-right" :data-aos-duration="duracion">
         <v-row no-gutters>
-            <v-card class="todo-ancho blur" title="Contacto" variant="tonal" :text="texto">
+            <v-card class="todo-ancho oscuro" title="Contacto" variant="tonal" :text="texto">
                 <v-card class="transp margen">
                     <v-row fill-width>
                         <v-col class="margen">
-                            <v-img src="../assets/img/form.jpg" width="200%"></v-img>
+                            <v-img :src="contacto_img" width="100vh"></v-img>
                         </v-col>
                         <v-col class="margen">
                             <form>
@@ -21,11 +21,11 @@
                                     :error-messages="v$.select.$errors.map(e => e.$message)" label="Motivo" required
                                     @change="v$.select.$touch" @blur="v$.select.$touch"></v-select>
 
-                                <v-btn class="me-4" @click="v$.$validate">
-                                    submit
+                                <v-btn class="me-4 ma" @click="v$.$validate">
+                                    enviar
                                 </v-btn>
-                                <v-btn @click="clear">
-                                    clear
+                                <v-btn @click="clear" class="ma">
+                                    borrar
                                 </v-btn>
                             </form>
                         </v-col>
@@ -44,7 +44,8 @@ export default {
     name: 'Contacto',
     data() {
         return {
-            texto: 'hola bro, dime como puedo ayudarte'
+            contacto_img: require('../assets/img/contacto/contactus.jpg'),
+            texto: 'Conecta conmigo para cualquier consulta o proyecto en mente, estoy aquí para ayudarte a hacer realidad tus ideas 🤝'
         }
     },
     props: {
@@ -96,4 +97,10 @@ export default {
 .todo-ancho{
     width: 100%;
 }
+
+.ma{
+    margin-bottom: 5px;
+}
+
+
 </style>
