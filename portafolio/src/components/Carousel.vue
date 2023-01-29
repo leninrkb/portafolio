@@ -1,6 +1,6 @@
 <template>
     <div data-aos="fade-up" :data-aos-duration="duracion">
-        <v-card class="oscuro" title="Mis proyectos" variant="tonal">
+        <v-card class="oscuro" title="Proyectos" variant="tonal" :text="subtitle">
             <v-card variant="tonal" class="oscuro margen">
                 <v-carousel show-arrows="hover" :interval="intervalo" cycle>
                     <v-carousel-item v-for="img in images" :src="img.src" cover>
@@ -22,6 +22,7 @@ export default {
     name: 'Carousel'
     , data() {
         return {
+            subtitle:'Estos son proyectos que he realizado tanto en solitario como en colaboración, aquí presento una muestra del trabajo y dedicación mios y de mis colegas a cada uno de ellos',
             images: [
                 {
                     src: require('../assets/img/img_carousel/albedo.jpg')

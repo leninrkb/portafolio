@@ -25,7 +25,7 @@ export default {
     name: 'HabilidadesDomina',
     data() {
         return {
-            texto: 'Estas son las tecnologias con las que actualmente estoy capacitado para trabajar',
+            texto: 'Duarnte mi periodo de preparacion he tenido la oportunidad de trabajar proyectos de distinta indole. Estas son las tecnologias con las que tengo experiencia.',
             intervalo: 2500,
             images: [
                 {
