@@ -49,9 +49,7 @@
             </v-col>
             <v-col>
                 <div data-aos="fade-left" v-bind:data-aos-duration="duracion">
-                    <v-card class="grid-margin blur" variant="tonal" title="Mi Curriculum" subtitle="This is a subtitle"
-                        v-bind:text="descripcion">
-                    </v-card>
+                    <v-card class="grid-margin blur" variant="tonal" title="Mi Curriculum"  v-bind:text="des_cv">  </v-card>
                 </div>
             </v-col>
         </v-row>
@@ -62,6 +60,7 @@
 export default {
     data: () => ({
         descripcion: '"¡Hola! Mi nombre es Lenin. Como estudiante apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y también tengo experiencia en Inteligencia Artificial. ¡Estoy emocionado de compartir mi experiencia y habilidades con ustedes y espero trabajar en proyectos emocionantes en el futuro!"',
+        des_cv:'Mi camino hasta aquí: una jornada de aprendizaje y desafío. Hechale un vistazo!',
         messages: [
             {
                 from: 'Universidad',

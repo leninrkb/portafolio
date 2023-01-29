@@ -1,3 +1,11 @@
 .blur{
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(5px);
+}
+
+.margen {
+    margin: 5px;
+}
+
+.transp {
+    background-color: transparent;
 }

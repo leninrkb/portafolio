@@ -131,8 +131,8 @@ export default {
             let a = setInterval(moveFirst, 10);
             let b = setInterval(moveSecond, 10);
 
-            carouselSlider.addEventListener("mouseenter", hover);
-            carouselSlider.addEventListener("mouseleave", unhover);
+            // carouselSlider.addEventListener("mouseenter", hover);
+            // carouselSlider.addEventListener("mouseleave", unhover);
         }
 
         carousel();
@@ -141,17 +141,6 @@ export default {
 
 </script>
 <style>
-.margen {
-    margin: 5px;
-}
-
-.transp {
-    background-color: transparent;
-}
-
-
-
-
 
 ul {
     list-style: none;

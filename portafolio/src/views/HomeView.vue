@@ -69,15 +69,15 @@ onMounted(() => {
   AOS.init();
 })
 const theme = ref('dark');
-// const options = {
-//   "cursorOuter": "circle-basic",
-//   "hoverEffect": "circle-move",
-//   "hoverItemMove": false,
-//   "defaultCursor": false,
-//   "outerWidth": 30,
-//   "outerHeight": 30
-// };
-// magicMouse(options);
+const options = {
+  "cursorOuter": "circle-basic",
+  "hoverEffect": "circle-move",
+  "hoverItemMove": false,
+  "defaultCursor": false,
+  "outerWidth": 30,
+  "outerHeight": 30
+};
+magicMouse(options);
 
 function cambiarTema() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
@@ -95,7 +95,7 @@ function cambiarTema() {
 }
 
 .espacio-abajo {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .espacios-laterales {

@@ -1,5 +1,7 @@
 <template>
-    experiencia
+    proyectos personales
+    proyectos en los que se ha aportado
+    proyectos para clientes
 </template>
 <script>
 export default{
