@@ -14,46 +14,39 @@
       </v-app-bar>
     </div> -->
 
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <v-main>
-        <v-parallax src="../assets/img/fondo3.png">
-          <Logo></Logo>
-          <div class="espacio-abajo">
-            <InfoPersonal></InfoPersonal>
-          </div>
-
-          <div class="espacio-abajo espacios-laterales">
-            <Carousel></Carousel>
-          </div>
-
-          <div class="espacio-abajo espacios-laterales">
-            <HabilidadesDomina></HabilidadesDomina>
-          </div>
-
-          <div class="espacio-abajo espacios-laterales">
-            <Experiencia></Experiencia>
-          </div>
-
-          <div class="espacio-abajo espacios-laterales">
-            <Contacto></Contacto>
-          </div>
-        </v-parallax>
-      </v-main>
-    </div>
-    <div>
-      <Footer></Footer>
-    </div>
+    <v-main>
+      <v-parallax src="../assets/img/fondo.jpg">
+        <Logo :duracion=" duracion"></Logo>
+        <div class="espacio-abajo">
+          <InfoPersonal :duracion="duracion"></InfoPersonal>
+        </div>
+        <div class="espacio-abajo espacios-laterales">
+          <Carousel :duracion="duracion"></Carousel>
+        </div>
+        <div class="espacio-abajo espacios-laterales">
+          <HabilidadesDomina :duracion="duracion"></HabilidadesDomina>
+        </div>
+        <div class="espacio-abajo espacios-laterales">
+          <Experiencia :duracion="duracion"></Experiencia>
+        </div>
+        <div class="espacio-abajo espacios-laterales">
+          <Contacto :duracion="duracion"></Contacto>
+        </div>
+      </v-parallax>
+    </v-main>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
-
 export default defineComponent({
   name: 'HomeView',
-
-  components: {
-  },
+  data(){
+    return{
+      duracion: 1000
+    }
+  }
 });
 </script>
 
@@ -69,21 +62,22 @@ import Logo from '@/components/Logo.vue';
 import { onMounted } from "vue";
 import AOS from "aos";
 import { magicMouse } from 'magicmouse.js'
+import Scrollbar from 'smooth-scrollbar'
 
 onMounted(() => {
+  // Scrollbar.init(document.querySelector('#scroll-container'));
   AOS.init();
 })
-
 const theme = ref('dark');
-const options = {
-  "cursorOuter": "circle-basic",
-  "hoverEffect": "circle-move",
-  "hoverItemMove": false,
-  "defaultCursor": false,
-  "outerWidth": 30,
-  "outerHeight": 30
-};
-magicMouse(options);
+// const options = {
+//   "cursorOuter": "circle-basic",
+//   "hoverEffect": "circle-move",
+//   "hoverItemMove": false,
+//   "defaultCursor": false,
+//   "outerWidth": 30,
+//   "outerHeight": 30
+// };
+// magicMouse(options);
 
 function cambiarTema() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
@@ -91,8 +85,9 @@ function cambiarTema() {
 </script>
 
 <style>
-html {
-  scroll-behavior: smooth;
+#scroll-container {
+  width: 100%;
+  height: 100vh;
 }
 
 .margen {

@@ -3,6 +3,12 @@
 </template>
 <script>
 export default{
-    name:'Experiencia'
+    name:'Experiencia',
+    props:{
+        duracion:{
+            type:Number,
+            required:true
+        }
+    }
 }
 </script>

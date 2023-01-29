@@ -1,8 +1,8 @@
 <template>
-    <div data-aos="fade-up" data-aos-duration="1000">
+    <div data-aos="fade-up" :data-aos-duration="duracion">
         <v-card class="blur" title="Mis proyectos" variant="tonal"></v-card>
         <v-card variant="tonal">
-            <v-carousel show-arrows="hover" interval="2500" cycle>
+            <v-carousel show-arrows="hover" :interval="intervalo" cycle>
                 <v-carousel-item v-for="img in images" :src="img.src" cover>
                     <div class="d-flex fill-height justify-center align-center">
                         <div class="text-h2">
@@ -44,7 +44,14 @@ export default {
                     src: require('../assets/img/img_carousel/to4.jpg')
                     , title: 'mi amor'
                 }
-            ]
+            ],
+            intervalo:10000
+        }
+    },
+    props:{
+        duracion:{
+            type:Number,
+            required:true
         }
     }
 

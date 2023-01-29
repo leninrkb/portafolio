@@ -61,7 +61,6 @@
 <script>
 export default {
     data: () => ({
-        duracion: 1000,
         descripcion: '"¡Hola! Mi nombre es Lenin. Como estudiante apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y también tengo experiencia en Inteligencia Artificial. ¡Estoy emocionado de compartir mi experiencia y habilidades con ustedes y espero trabajar en proyectos emocionantes en el futuro!"',
         messages: [
             {
@@ -90,6 +89,12 @@ export default {
             },
         ],
     }),
+    props:{
+        duracion: {
+            type: Number,
+            required: true
+        }
+    }
 }
 </script>
 

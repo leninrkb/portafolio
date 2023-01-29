@@ -3,6 +3,12 @@
 </template>
 <script>
 export default{
-    name:'Contacto'
+    name:'Contacto',
+    props:{
+        duracion:{
+            type:Number,
+            required:true
+        }
+    }
 }
 </script>
