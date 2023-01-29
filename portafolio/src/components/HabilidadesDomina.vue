@@ -1,9 +1,4 @@
-<template> 
-    vue
-    spring boot
-
-    tensorflow
-    opencv
+<template>
     <div data-aos="fade-right" :data-aos-duration="duracion">
         <v-row no-gutters>
             <v-card class="blur" title="Tecnologias" variant="tonal" :text="texto">
@@ -37,10 +32,27 @@ export default {
                     src: require('../assets/img/img_tecnologias/ai.png')
                 }
                 , {
+                    src: require('../assets/img/img_tecnologias/tensorflow.png')
+                }
+                , {
+                    src: require('../assets/img/img_tecnologias/opencv.png')
+                }
+                , {
+                    src: require('../assets/img/img_tecnologias/python.png')
+                }
+                , {
                     src: require('../assets/img/img_tecnologias/c-sharp.png')
                 }
                 , {
                     src: require('../assets/img/img_tecnologias/java.png')
+                }
+                , {
+                    src: require('../assets/img/img_tecnologias/spring-boot.png')
+                }
+                , {
+                    src: require('../assets/img/img_tecnologias/vue.png')
+                }, {
+                    src: require('../assets/img/img_tecnologias/angular.png')
                 }
                 , {
                     src: require('../assets/img/img_tecnologias/js.png')
@@ -48,12 +60,13 @@ export default {
                 , {
                     src: require('../assets/img/img_tecnologias/linux.png')
                 }
-                , {
-                    src: require('../assets/img/img_tecnologias/python.png')
-                }
+
                 , {
                     src: require('../assets/img/img_tecnologias/sql-server.png')
                 }
+                
+
+
             ],
         }
     },
