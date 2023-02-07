@@ -7,6 +7,7 @@ import { loadFonts } from './plugins/webfontloader'
 // importing AOS css style globally
 import 'aos/dist/aos.css'
 import './styles.css'
+// import VuePdfReader from 'vue-pdf-reader';
 
 
 
@@ -16,4 +17,5 @@ createApp(App)
   .use(router)
   .use(store)
   .use(vuetify)
+  // .use(VuePdfReader)
   .mount('#app')
