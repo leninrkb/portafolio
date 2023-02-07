@@ -9,22 +9,22 @@
                         </v-col>
                         <v-col class="margen">
                             <form>
-                                <v-text-field v-model="state.name"
+                                <v-text-field class="magic-hover" v-model="state.name"
                                     :error-messages="v$.name.$errors.map(e => e.$message)" :counter="10" label="Nombre"
                                     required @input="v$.name.$touch" @blur="v$.name.$touch"></v-text-field>
 
-                                <v-text-field v-model="state.email"
+                                <v-text-field class="magic-hover" v-model="state.email"
                                     :error-messages="v$.email.$errors.map(e => e.$message)" label="E-mail" required
                                     @input="v$.email.$touch" @blur="v$.email.$touch"></v-text-field>
 
-                                <v-select transition="scroll-x-transition" v-model="state.select" :items="items"
+                                <v-select class="magic-hover" transition="scroll-x-transition" v-model="state.select" :items="items"
                                     :error-messages="v$.select.$errors.map(e => e.$message)" label="Motivo" required
                                     @change="v$.select.$touch" @blur="v$.select.$touch"></v-select>
 
-                                <v-btn class="me-4 ma" @click="v$.$validate">
+                                <v-btn class="me-4 ma magic-hover" @click="v$.$validate">
                                     enviar
                                 </v-btn>
-                                <v-btn @click="clear" class="ma">
+                                <v-btn @click="clear" class="ma magic-hover">
                                     borrar
                                 </v-btn>
                             </form>

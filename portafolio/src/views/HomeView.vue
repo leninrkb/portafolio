@@ -64,27 +64,27 @@ import InfoPersonal from '@/components/InfoPersonal.vue';
 import HabilidadesDomina from '@/components/HabilidadesDomina.vue'
 import Experiencia from '@/components/Experiencia.vue'
 import Contacto from '@/components/Contacto.vue'
-import Logo from '@/components/Logo.vue';
+// import Logo from '@/components/Logo.vue';
 import TypeEffect from '@/components/Adicionales/TypeEffect.vue';
 import { onMounted } from "vue";
 import AOS from "aos";
-import { magicMouse } from 'magicmouse.js'
-import Scrollbar from 'smooth-scrollbar'
+// import { magicMouse } from 'magicmouse.js'
+// import Scrollbar from 'smooth-scrollbar'
 
 onMounted(() => {
   // Scrollbar.init(document.querySelector('#scroll-container'));
   AOS.init();
 })
 const theme = ref('dark');
-const options = {
-  "cursorOuter": "circle-basic",
-  "hoverEffect": "circle-move",
-  "hoverItemMove": false,
-  "defaultCursor": false,
-  "outerWidth": 30,
-  "outerHeight": 30
-};
-magicMouse(options);
+// const options = {
+//   "cursorOuter": "circle-basic",
+//   "hoverEffect": "circle-move",
+//   "hoverItemMove": false,
+//   "defaultCursor": false,
+//   "outerWidth": 30,
+//   "outerHeight": 30
+// };
+// magicMouse(options);
 
 function cambiarTema() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'

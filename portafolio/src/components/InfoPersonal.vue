@@ -54,7 +54,7 @@
                         <v-row justify="center">
                             <v-col cols="5">
                                 <v-sheet class="pa-2 ma-2 transp">
-                                    <v-btn prepend-icon="mdi-vuetify" variant="tonal" @click="click()">
+                                    <v-btn class="magic-hover"  prepend-icon="mdi-vuetify" variant="tonal" @click="click()">
                                         {{ boton }}
                                     </v-btn>
                                 </v-sheet>
