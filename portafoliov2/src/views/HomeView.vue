@@ -6,12 +6,12 @@
         </Card>
       </div>
     </div>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
       <div class="col bg-slate-500">
-        col
+        aqui va un resumen de lo que me gusta
       </div>
       <div class="col bg-slate-600">
-        col
+        aqui va el cv
       </div>
     </div>
   </div>
