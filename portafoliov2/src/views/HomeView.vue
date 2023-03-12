@@ -2,7 +2,7 @@
   <div class="mx-3">
     <div class="gri grid-cols-1">
       <div class="col mb-3">
-        <Card :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img" :img_classes="img_classes">
+        <Card data-aos="zoom-in-up" :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img" :img_classes="img_classes">
         </Card>
       </div>
     </div>

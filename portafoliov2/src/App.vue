@@ -3,16 +3,17 @@
   <div class="container mx-auto mt-10">
     <router-view></router-view>
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue';
 import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 export default{
   name:'App',
   components:{
-    HomeView,
-    Navbar
+    Navbar,
+    Footer,
   }
 }
 </script>
