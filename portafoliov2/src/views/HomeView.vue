@@ -1,6 +1,6 @@
 <template>
   <div class="gri grid-cols-1">
-    <div class="col mt-10">
+    <div class="col mt-10 mx-3">
       <Card :parrafo="parrafo" 
       :subtitulo1="subtitulo1" 
       :subtitulo2="subtitulo2" 
