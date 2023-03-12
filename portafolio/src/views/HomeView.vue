@@ -34,9 +34,9 @@
           <div class="espacio-abajo espacios-laterales">
             <HabilidadesDomina :duracion="duracion"></HabilidadesDomina>
           </div>
-          <div class="espacio-abajo espacios-laterales">
+          <!-- <div class="espacio-abajo espacios-laterales">
             <Experiencia :duracion="duracion"></Experiencia>
-          </div>
+          </div> -->
           <div class="espacio-abajo espacios-laterales">
             <Contacto :duracion="duracion"></Contacto>
           </div>
