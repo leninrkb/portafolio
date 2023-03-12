@@ -18,7 +18,7 @@ export default {
     Card
   },
   mounted(){
-    this.parrafo = 'Como apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y C#. Tengo experiencia en proyectos WebInteligencia Artificial. ¡Estoy emocionado de compartir mis habilidades y espero trabajar en proyectos emocionantes en el futuro!';
+    this.parrafo = 'Como apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y C#. Tengo experiencia en proyectos de escritorio, web e inteligencia artificial. ¡Estoy emocionado de compartir mis habilidades y espero trabajar en proyectos emocionantes en el futuro!';
     this.subtitulo1 = 'Lenin Acosta';
     this.subtitulo2 = 'Desarrollador de software';
     this.img = require('../assets/lenin.jpg');
@@ -29,7 +29,7 @@ export default {
       subtitulo1:'',
       subtitulo2:'',
       img:'',
-      img_classes:' w-1/5 h-1/5'
+      img_classes:'w-1/4 h-1/4 grayscale'
     }
   }
 }
