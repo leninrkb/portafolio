@@ -9,6 +9,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.12",
     "@heroicons/vue": "^2.0.16",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^10",
     "core-js": "^3.8.3",
     "postcss": "^8",
