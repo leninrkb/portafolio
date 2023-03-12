@@ -1,6 +1,6 @@
 <template>
   <Navbar></Navbar>
-  <div class="container mx-auto">
+  <div class="container mx-auto mt-10">
     <router-view></router-view>
   </div>
 </template>

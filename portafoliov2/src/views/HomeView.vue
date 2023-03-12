@@ -1,16 +1,18 @@
 <template>
-  <div class="gri grid-cols-1">
-    <div class="col mt-10 mx-3 mb-3">
-      <Card :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img" :img_classes="img_classes">
-      </Card>
+  <div class="mx-3">
+    <div class="gri grid-cols-1">
+      <div class="col mb-3">
+        <Card :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img" :img_classes="img_classes">
+        </Card>
+      </div>
     </div>
-  </div>
-  <div class="grid grid-cols-2">
-    <div class="col bg-slate-500">
-      col
-    </div>
-    <div class="col bg-slate-600">
-      col
+    <div class="grid grid-cols-2">
+      <div class="col bg-slate-500">
+        col
+      </div>
+      <div class="col bg-slate-600">
+        col
+      </div>
     </div>
   </div>
 </template>

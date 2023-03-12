@@ -1,5 +1,7 @@
 <template>
-    <Card :parrafo="parrafo"></Card>
+    <div class="mx-3">
+        <Card :parrafo="parrafo"></Card>
+    </div>
 </template>
 
 <script>
