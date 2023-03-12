@@ -1,6 +1,6 @@
 <template>
   <div class="gri grid-cols-1">
-    <div class="col">
+    <div class="col mt-10">
       <Card :parrafo="parrafo" 
       :subtitulo1="subtitulo1" 
       :subtitulo2="subtitulo2" 
@@ -22,7 +22,6 @@ export default {
     this.subtitulo1 = 'Lenin Acosta';
     this.subtitulo2 = 'Desarrollador de software';
     this.img = require('../assets/lenin.jpg');
-    this.img_classes = ' w-1/5 h-1/5'
   },
   data(){
     return{
@@ -30,7 +29,7 @@ export default {
       subtitulo1:'',
       subtitulo2:'',
       img:'',
-      img_classes:''
+      img_classes:' w-1/5 h-1/5'
     }
   }
 }

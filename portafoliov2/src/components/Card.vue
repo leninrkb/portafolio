@@ -4,15 +4,15 @@
           >
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            <p class="text-lg font-medium text-gray-300 text-justify">
+            <p class="text-sm md:text-lg font-medium text-gray-300 text-justify">
               {{parrafo}}
             </p>
           </blockquote>
           <figcaption class="font-medium">
-            <div class=" text-sky-400">
+            <div class="text-sm md:text-lg text-sky-400">
               {{subtitulo1}}
             </div>
-            <div class=" text-slate-500">
+            <div class="text-sm md:text-lg text-slate-500">
               {{subtitulo2}}
             </div>
           </figcaption>
@@ -24,7 +24,7 @@
 export default{
     name:'Card',
     mounted(){
-      this.imgClasses += this.img_classes
+      this.imgClasses = this.imgClasses.concat(this.img_classes);
     },
     props:{
         parrafo:String,
@@ -35,7 +35,7 @@ export default{
     },
     data(){
       return{
-        imgClasses:'md:rounded-xl rounded-full mx-auto my-auto '
+        imgClasses:' md:rounded-xl rounded-full mx-auto my-auto '
       }
     }
 }
