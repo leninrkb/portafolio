@@ -2,11 +2,9 @@
   <div class="mx-3">
     <div class="grid grid-cols-1 gap-3">
       <div class="col">
-        <span class="font-mono text-slate-400 text-5xl">Hola!<br>
+        <span id="saludo1" class="font-mono text-slate-400 text-5xl">¡Hola👋!soy<br>
         </span>
-        <span id="saludo2" class="font-mono text-slate-400 text-5xl">soy 
-          <span class="font-mono text-cyan-400 text-6xl">Lenin Acosta</span>
-        </span>
+        <span class="font-mono text-cyan-400 text-6xl">Lenin Acosta</span><br>
         <span class="font-mono text-cyan-500 text-4xl">Jr Dev.</span>
       </div>
       <div class="col mb-3">
@@ -53,18 +51,21 @@ export default {
 
 
 <style scoped>
-#saludo2{
+#saludo1 {
   display: block;
   white-space: nowrap;
-  border-right: 4px solid;
-  width: 19ch;
-  animation: typing 2s steps(19), blink .5s infinite step-end alternate;
+  /* border-right: 4px solid; */
+  width: 11ch;
+  animation: typing 1s steps(11);
   overflow: hidden;
 }
-@keyframes typing{
-  from{width: 0;}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
-@keyframes blink{
+
+/* @keyframes blink{
   50%{border-color: transparent;}
-}
-</style>
+} */</style>
