@@ -1,8 +1,17 @@
 <template>
   <div class="mx-3">
-    <div class="gri grid-cols-1">
+    <div class="grid grid-cols-1 gap-3">
+      <div class="col">
+        <span class="font-mono text-slate-400 text-5xl">Hola!<br>
+        </span>
+        <span id="saludo2" class="font-mono text-slate-400 text-5xl">soy 
+          <span class="font-mono text-cyan-400 text-6xl">Lenin Acosta</span>
+        </span>
+        <span class="font-mono text-cyan-500 text-4xl">Jr Dev.</span>
+      </div>
       <div class="col mb-3">
-        <Card data-aos="zoom-in-up" :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img" :img_classes="img_classes">
+        <Card data-aos="fade-right" :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img"
+          :img_classes="img_classes">
         </Card>
       </div>
     </div>
@@ -41,3 +50,21 @@ export default {
   }
 }
 </script>
+
+
+<style scoped>
+#saludo2{
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  animation: typing 2s steps(19), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing{
+  from{width: 0;}
+}
+@keyframes blink{
+  50%{border-color: transparent;}
+}
+</style>
