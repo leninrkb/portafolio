@@ -6,6 +6,14 @@
                 :img="img"></Card>
             </div>
         </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+            <div class="col">
+                <Card></Card>
+            </div>
+            <div class="col">
+                <Card></Card>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,7 +27,8 @@ export default{
     data(){
         return{
             parrafo:'proyectos coming soon!!!',
-            img:require('../assets/logo.png')
+            img:require('../assets/logo.png'),
+
         }
     }
 }
