@@ -20,16 +20,21 @@
       <div class="col bg-slate-600">
         aqui va el cv
       </div>
+      <div class="col">
+        <CardHabilidades></CardHabilidades>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import CardHabilidades from '@/components/CardHabilidades.vue';
 import Card from '../components/Card.vue'
 export default {
   name: 'HomeView',
   components: {
-    Card
+    Card,
+    CardHabilidades
   },
   mounted() {
     this.parrafo = 'Como apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y C#. Tengo experiencia en proyectos de escritorio, web e inteligencia artificial. ¡Es un placer compartir mis habilidades, espero trabajemos en proyectos emocionantes en el futuro!';
