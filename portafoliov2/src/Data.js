@@ -10,23 +10,25 @@ export const datos_habilidades = [
             utilizando tecnologías versatiles para ofrecer 
             soluciones de calidad en el frontend.`,
         lista: [
-            { svg: require('./assets/angular.svg'), nivel: '35%', estilo1: 'bg-slate-500', estilo2: 'bg-red-400' },
-            { svg: require('./assets/vuejs.svg'), nivel: '60%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/css3.svg'), nivel: '40%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
-            { svg: require('./assets/materializecss.svg'), nivel: '40%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
-            { svg: require('./assets/tailwindcss-icon.svg'), nivel: '55%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/picocss.svg'), nivel: '55%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/vuetify.png'), nivel: '35%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/angular.svg'), nivel: '35%', estilo1: 'bg-red-300', estilo2: 'bg-red-400' },
+            { svg: require('./assets/vuejs.svg'), nivel: '60%', estilo1: 'bg-green-400', estilo2: 'bg-green-400' },
+            { svg: require('./assets/css3.svg'), nivel: '40%', estilo1: 'bg-cyan-500', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/materializecss.svg'), nivel: '40%', estilo1: 'bg-slate-600', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/tailwindcss-icon.svg'), nivel: '55%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/picocss.svg'), nivel: '55%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/vuetify.png'), nivel: '35%', estilo1: 'bg-slate-600', estilo2: 'bg-yellow-400' },
         ]
     },
     {
         titulo: 'Backend',
-        parrafo: 'Estas son mis habiliadades con el backend',
+        parrafo: `Desarrollo robusto
+        y eficiente en el servidor, 
+        optimizando recursos y ofreciendo
+        soluciones escalables.`,
         lista: [
-            { svg: require('./assets/angular.svg'), nivel: '25%', estilo1: 'bg-slate-500', estilo2: 'bg-red-400' },
-            { svg: require('./assets/angular.svg'), nivel: '50%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
-            { svg: require('./assets/angular.svg'), nivel: '60%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/angular.svg'), nivel: '80%', estilo1: 'bg-slate-500', estilo2: 'bg-sky-400' },
+            { svg: require('./assets/java.svg'), nivel: '75%', estilo1: 'bg-gradient-to-t from-cyan-500 to-orange-500', estilo2: 'bg-green-400' },
+            { svg: require('./assets/python.svg'), nivel: '70%', estilo1: 'bg-blue-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/csharp.png'), nivel: '55%', estilo1: 'bg-slate-600', estilo2: 'bg-yellow-400' },
         ]
     }
 ]
