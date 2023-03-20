@@ -29,6 +29,9 @@ export const datos_habilidades = [
             { svg: require('./assets/java.svg'), nivel: '75%', estilo1: 'bg-gradient-to-t from-cyan-500 to-orange-500', estilo2: 'bg-green-400' },
             { svg: require('./assets/python.svg'), nivel: '70%', estilo1: 'bg-blue-600', estilo2: 'bg-green-400' },
             { svg: require('./assets/csharp.png'), nivel: '55%', estilo1: 'bg-slate-600', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/sqlserver.svg'), nivel: '60%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/sqlplus.svg'), nivel: '60%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/mysql.svg'), nivel: '60%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
         ]
     }
 ]
