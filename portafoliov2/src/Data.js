@@ -1,26 +1,28 @@
+//0-25 bg-red-400
+//26-50 bg-yellow-400
+//51-75 bg-green-400
+//76-100 bg-sky-400
 export const datos_habilidades = [
     {
         titulo: 'Frontend',
-        parrafo: 'Estas son mis habilidades con el Frontend',
+        parrafo: `Creación de 
+            paginas web atractivas y responsivas
+            utilizando tecnologías versatiles para ofrecer 
+            soluciones de calidad en el frontend.`,
         lista: [
-            //0-25 bg-red-400
-            //26-50 bg-yellow-400
-            //51-75 bg-green-400
-            //76-100 bg-sky-400
-            { svg: require('./assets/angular.svg'), nivel: '25%', estilo1: 'bg-slate-500', estilo2: 'bg-red-400' },
-            { svg: require('./assets/angular.svg'), nivel: '50%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
-            { svg: require('./assets/angular.svg'), nivel: '60%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/angular.svg'), nivel: '80%', estilo1: 'bg-slate-500', estilo2: 'bg-sky-400' },
+            { svg: require('./assets/angular.svg'), nivel: '35%', estilo1: 'bg-slate-500', estilo2: 'bg-red-400' },
+            { svg: require('./assets/vuejs.svg'), nivel: '60%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
+            { svg: require('./assets/css3.svg'), nivel: '40%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/materializecss.svg'), nivel: '40%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
+            { svg: require('./assets/tailwindcss-icon.svg'), nivel: '55%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
+            { svg: require('./assets/picocss.svg'), nivel: '55%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
+            { svg: require('./assets/vuetify.png'), nivel: '35%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
         ]
     },
     {
-        titulo: 'BackEnd',
-        parrafo: 'Estas son mis habiliadades con el BackEnd',
+        titulo: 'Backend',
+        parrafo: 'Estas son mis habiliadades con el backend',
         lista: [
-            //0-25 bg-red-400
-            //26-50 bg-yellow-400
-            //51-75 bg-green-400
-            //76-100 bg-sky-400
             { svg: require('./assets/angular.svg'), nivel: '25%', estilo1: 'bg-slate-500', estilo2: 'bg-red-400' },
             { svg: require('./assets/angular.svg'), nivel: '50%', estilo1: 'bg-slate-500', estilo2: 'bg-yellow-400' },
             { svg: require('./assets/angular.svg'), nivel: '60%', estilo1: 'bg-slate-500', estilo2: 'bg-green-400' },
