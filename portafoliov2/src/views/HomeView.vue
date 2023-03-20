@@ -25,6 +25,11 @@
           :lista="datos_card_habilidades[1].lista">
         </CardHabilidades>
       </div>
+      <div class="col">
+        <CardHabilidades :titulo="datos_card_habilidades[2].titulo" :parrafo="datos_card_habilidades[2].parrafo"
+          :lista="datos_card_habilidades[2].lista">
+        </CardHabilidades>
+      </div>
       <div class="col bg-slate-700">
         fghfgh
         <div class="text-center">
