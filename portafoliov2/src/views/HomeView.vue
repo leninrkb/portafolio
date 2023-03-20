@@ -8,14 +8,18 @@
         <span class="font-mono text-cyan-500 text-4xl">Jr Dev.</span>
       </div>
       <div class="col mb-3">
-        <Card data-aos="fade-right" :parrafo="parrafo" :subtitulo1="subtitulo1" :subtitulo2="subtitulo2" :img="img"
-          :img_classes="img_classes">
+        <Card data-aos="fade-right" 
+        :parrafo="datos_presentacion.parrafo" 
+        :subtitulo1="datos_presentacion.nombre" 
+        :subtitulo2="datos_presentacion.profesion" 
+        :img="datos_presentacion.img"
+        :img_classes="datos_presentacion.estilos_img">
         </Card>
       </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
       <div class="col">
-        <CardHabilidades :titulo="titulo" :parrafo="parrafoh" :lista="lista"></CardHabilidades>
+        <CardHabilidades :titulo="datos_card_habilidades[0].titulo" :parrafo="datos_card_habilidades[0].parrafo" :lista="datos_card_habilidades[0].lista"></CardHabilidades>
       </div>
       <div class="col bg-slate-600">
         aqui va el cv
@@ -26,32 +30,18 @@
 
 <script>
 import CardHabilidades from '@/components/CardHabilidades.vue';
-import Card from '../components/Card.vue'
+import Card from '../components/Card.vue';
+import {datos_habilidades, presentacion} from '../Data.js';
 export default {
   name: 'HomeView',
   components: {
     Card,
     CardHabilidades
   },
-  mounted() {
-    this.parrafo = 'Como apasionado de la tecnología, he desarrollado habilidades en lenguajes de programación como Python, Java y C#. Tengo experiencia en proyectos de escritorio, web e inteligencia artificial. ¡Es un placer compartir mis habilidades, espero trabajemos en proyectos emocionantes en el futuro!';
-    this.subtitulo1 = 'Lenin Acosta';
-    this.subtitulo2 = 'Desarrollador de software';
-    this.img = require('../assets/lenin.jpg');
-  },
   data() {
     return {
-      parrafo: '',
-      subtitulo1: '',
-      subtitulo2: '',
-      img: '',
-      img_classes: 'w-1/4 h-1/4 grayscale',
-      titulo:'Frontend',
-      parrafoh:'estas son mis habilidades con el front',
-      lista:[
-        {svg:require('../assets/angular.svg'), width:'90%', estilo1:'bg-slate-500', estilo2:'bg-red-300'},
-        {svg:require('../assets/angular.svg'), width:'50%', estilo1:'bg-slate-400', estilo2:'bg-green-500'},
-      ]
+      datos_presentacion:presentacion,
+      datos_card_habilidades:datos_habilidades
     }
   }
 }
@@ -62,9 +52,9 @@ export default {
 #saludo1 {
   display: block;
   white-space: nowrap;
-  /* border-right: 4px solid; */
-  width: 11ch;
-  animation: typing 1s steps(11);
+  border-right: 4px solid;
+  width: 12ch;
+  animation: typing 1s steps(12), blink .8s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -74,6 +64,7 @@ export default {
   }
 }
 
-/* @keyframes blink{
+@keyframes blink{
   50%{border-color: transparent;}
-} */</style>
+}
+</style>

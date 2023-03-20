@@ -6,7 +6,7 @@
             <div class="col" v-for="item in lista" :key="item">
                 <img :class="estilo1+item.estilo1" :src="item.svg" />
                 <div class="w-auto h-2 bg-gray-500 rounded-full mt-2">
-                    <div :class="estilo2+item.estilo2" :style="{'width':item.width}"></div>
+                    <div :class="estilo2+item.estilo2" :style="{'width':item.nivel}"></div>
                 </div>
             </div>
         </div>
@@ -19,9 +19,7 @@ export default {
     props:{
         titulo:String,
         parrafo:String,
-        lista:[],
-        estilo_icon1:String,
-        estilo_icon2:String
+        lista:[]
     },
     data(){
         return{
