@@ -14,14 +14,11 @@
       </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-      <div class="col bg-slate-500">
-        aqui va un resumen de lo que me gusta
+      <div class="col">
+        <CardHabilidades :titulo="titulo" :parrafo="parrafoh" :lista="lista"></CardHabilidades>
       </div>
       <div class="col bg-slate-600">
         aqui va el cv
-      </div>
-      <div class="col">
-        <CardHabilidades></CardHabilidades>
       </div>
     </div>
   </div>
@@ -48,7 +45,13 @@ export default {
       subtitulo1: '',
       subtitulo2: '',
       img: '',
-      img_classes: 'w-1/4 h-1/4 grayscale'
+      img_classes: 'w-1/4 h-1/4 grayscale',
+      titulo:'Frontend',
+      parrafoh:'estas son mis habilidades con el front',
+      lista:[
+        {svg:require('../assets/angular.svg'), width:'90%', estilo1:'bg-slate-500', estilo2:'bg-red-300'},
+        {svg:require('../assets/angular.svg'), width:'50%', estilo1:'bg-slate-400', estilo2:'bg-green-500'},
+      ]
     }
   }
 }
