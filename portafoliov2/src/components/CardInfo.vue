@@ -25,7 +25,7 @@ export default {
     },
     data() {
         return {
-            _estilos_card: ' w-fit sm:inline-flex rounded-xl ',
+            _estilos_card: ' w-fit inline-flex rounded-xl ',
             _estilos_texto: ' text-sm sm:text-lg md:text-2xl '
         }
     }
