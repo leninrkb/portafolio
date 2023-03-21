@@ -14,7 +14,7 @@
         </Card>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10">
       <div class="col">
         <CardHabilidades :titulo="datos_card_habilidades[0].titulo" :parrafo="datos_card_habilidades[0].parrafo"
           :lista="datos_card_habilidades[0].lista">
@@ -29,17 +29,6 @@
         <CardHabilidades :titulo="datos_card_habilidades[2].titulo" :parrafo="datos_card_habilidades[2].parrafo"
           :lista="datos_card_habilidades[2].lista">
         </CardHabilidades>
-      </div>
-      <div class="col bg-slate-700">
-        fghfgh
-        <div class="text-center">
-          <p>
-            Hover the link to see the
-            <a href="#"
-              class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-              data-te-toggle="tooltip" title="Hi! I'm tooltip">tooltip</a>
-          </p>
-        </div>
       </div>
     </div>
   </div>
