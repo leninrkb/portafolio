@@ -57,3 +57,13 @@ export const presentacion = {
     profesion: 'Ingeniero en software',
     estilos_img: 'w-1/4 h-1/4 grayscale'
 }
+
+export const datos_contacto = [
+    {
+        estilos_card:'bg-gray-500',
+        img:require('./assets/linkedin.svg'),
+        estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2',
+        enlace:'https://www.linkedin.com/in/lenin-acosta',
+        texto:'Estoy en Linkedin!'
+    }
+]

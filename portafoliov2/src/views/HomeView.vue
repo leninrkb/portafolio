@@ -37,7 +37,7 @@
 <script>
 import CardHabilidades from '@/components/CardHabilidades.vue';
 import Card from '../components/Card.vue';
-import { datos_habilidades, presentacion } from '../Data.js';
+import { datos_habilidades, presentacion } from '../DatosComponentes.js';
 export default {
   name: 'HomeView',
   components: {
