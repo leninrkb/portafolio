@@ -46,36 +46,12 @@ export default {
     name: 'Contacto',
     data() {
         return {
+            userId: 'rkb.lenin@gmail.com',
             contacto_img: require('../assets/img/contacto/contactus.jpg'),
             texto: 'Conecta conmigo para cualquier consulta o proyecto en mente, estoy aquí para ayudarte a hacer realidad tus ideas 🤝'
         }
     },
     methods: {
-        // async submitForm() {
-        //     if (this.v$.$validate) {
-        //         // const response = await axios.post('https://www.googleapis.com/gmail/v1/users/userId/messages/send', {
-        //         //     // Add your request body here
-        //         // }, {
-        //         //     headers: {
-        //         //         Authorization: `Bearer <your-access-token>`,
-        //         //     },
-        //         // });
-        //         // console.log(response.data);
-        //         console.log('correo enviado');
-        //     }
-        // },
-        // submitForm() {
-        //     this.v$.$validate().then(valid => {
-        //         if (valid) {
-        //             // aquí puedes ejecutar la acción que quieres realizar
-        //             // después de la validación exitosa, por ejemplo:
-        //             alert('Formulario enviado con éxito!');
-        //             console.log('Formulario válido');
-        //         } else {
-        //             console.log('Formulario no válido');
-        //         }
-        //     });
-        // }
         async submit() {
             const result = await this.v$.$validate()
             if (!result) {
@@ -86,8 +62,25 @@ export default {
             }
             // perform async actions
             console.log('valido');
-                console.log(result);
-        }
+            console.log(result);
+            this.submitForm()
+        },
+        async submitForm() {
+            const data = { 
+                name: this.state.name, 
+                email: this.state.email, 
+                select: this.state.select 
+            }
+            const response = await axios.post('https://gmail.googleapis.com/upload/gmail/v1/users/' + this.userId + '/messages/send',data,{
+                //body
+            },{
+                headers: {
+                    Authorization: `Bearer < sdasdas >`,
+                },
+            });
+            console.log(response.data);
+        },
+
 
     },
     props: {
@@ -118,7 +111,7 @@ export default {
             name: { required },
             email: { required, email },
             select: { required },
-            items: {  },
+            items: {},
         }
 
         const v$ = useVuelidate(rules, state)

@@ -15,6 +15,8 @@
     "core-js": "^3.8.3",
     "fs-promise": "^2.0.3",
     "magicmouse.js": "^1.2.1",
+    "mailer": "^0.6.7",
+    "node": "^19.6.0",
     "pdfjs-dist": "^3.3.122",
     "roboto-fontface": "*",
     "smooth-scrollbar": "^8.8.1",

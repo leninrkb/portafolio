@@ -14,10 +14,14 @@
           @click="cambiarTema()"></v-btn>
       </v-app-bar>
     </div> -->
-
     <v-main>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" duration="3000">
         <v-parallax src="../assets/img/wall2.jpg">
+          <!-- <div class="go-top-container">
+            <div class="go-top-button">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </div> -->
           <div class="espacio-abajo">
             <TypeEffect></TypeEffect>
           </div>
@@ -30,9 +34,9 @@
           <div class="espacio-abajo espacios-laterales">
             <HabilidadesDomina :duracion="duracion"></HabilidadesDomina>
           </div>
-          <div class="espacio-abajo espacios-laterales">
+          <!-- <div class="espacio-abajo espacios-laterales">
             <Experiencia :duracion="duracion"></Experiencia>
-          </div>
+          </div> -->
           <div class="espacio-abajo espacios-laterales">
             <Contacto :duracion="duracion"></Contacto>
           </div>
@@ -52,6 +56,19 @@ export default defineComponent({
     return {
       duracion: 1000
     }
+  },
+  mounted(){
+    // window.onscroll = function () {
+    //   document.querySelector('.go-top-container').classList.add('show')
+
+    //   if(document.documentElement.scrollTop > 100){
+    //     document.querySelector('.go-top-container').classList.add('show')
+
+    //   }else{
+    //     document.querySelector('.go-top-container').classList.remove('show')
+
+    //   }
+    // };
   }
 });
 </script>
@@ -116,5 +133,67 @@ function cambiarTema() {
   margin-right: 50px;
 }
 
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6;
+  z-index: -1;
+}
 
+.go-top-buttom {
+  width: 0rem;
+  height: 0rem;
+  background: rgb(123, 233, 211);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: antiquewhite;
+  transition: .2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-buttom {
+  animation: popup .3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  50% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
 </style>
