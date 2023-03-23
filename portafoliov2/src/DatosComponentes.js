@@ -60,24 +60,31 @@ export const presentacion = {
 
 export const datos_contacto = [
     {
-        estilos_card:'bg-gray-500 ',
+        estilos_card:'bg-gray-700 ',
         img:require('./assets/linkedin.svg'),
-        estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-green-500',
+        estilos_texto:'text-gray-400 decoration-slice underline decoration-gray-400 decoration-2 hover:text-sky-500',
         enlace:'https://www.linkedin.com/in/lenin-acosta',
         texto:'Estoy en Linkedin! '
     },
     {
-        estilos_card:'bg-gray-500',
+        estilos_card:'bg-gray-700',
         img:require('./assets/gmail.png'),
-        estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-orange-500 ',
+        estilos_texto:'text-gray-400 decoration-slice underline decoration-gray-400 decoration-2 hover:text-orange-500 ',
         enlace:'mailto:rkb.lenin@gmail.com',
         texto:'Aquí tienes mi correo '
     },
     {
-        estilos_card:'bg-gray-500',
+        estilos_card:'bg-gray-700',
         img:require('./assets/whatsapp.svg'),
-        estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-cyan-500 ',
+        estilos_texto:'text-gray-400 decoration-slice underline decoration-gray-400 decoration-2 hover:text-green-500 ',
         enlace:'https://wa.me/593959496570?text=Hola%20Lenin!%20he%20revisado%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo',
         texto:'Escríbeme por WhatsApp '
+    },
+    {
+        estilos_card:'bg-gray-700',
+        img:require('./assets/telegram.svg'),
+        estilos_texto:'text-gray-400 decoration-slice underline decoration-gray-400 decoration-2 hover:text-sky-500 ',
+        enlace:'https://t.me/leninrkb',
+        texto:'Escríbeme por Telegram '
     },
 ]

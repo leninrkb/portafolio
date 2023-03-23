@@ -1,6 +1,6 @@
 <template>
     <div class="mx-3">
-        <div class="grid grid-cols-1">
+        <div class="grid grid-cols-1 p-5 mb-10">
             <CardImg></CardImg>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
