@@ -1,14 +1,11 @@
 <template>
     <div class="mx-3">
         <div v-for="(item, index) in _datos_contacto" :key="index"
-            class="grid grid-cols-1 mx-auto text-slate-300 text-sm md:text-lg">
-            <div class="col m-3 ">
-                <CardInfo :left="index % 2 == 0" :datos="item"></CardInfo>
+            class="grid grid-cols-1 mx-auto lg:mx-60 text-slate-300 text-sm md:text-lg">
+            <div class="col m-3">
+                <CardInfo :class="index % 2 == 0 ? 'float-right' : 'float-left' " :left="index % 2 == 0" :datos="item"></CardInfo>
             </div>
         </div>
-        
-
-
     </div>
 </template>
 
