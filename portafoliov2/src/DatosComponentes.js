@@ -88,3 +88,15 @@ export const datos_contacto = [
         texto:'Escríbeme por Telegram '
     },
 ]
+
+export const card_proyectos = {
+    img: 'url("https://picsum.photos/640/480/?category=nature")',
+    titulo: 'Mis proyectos',
+    texto: 'Estos son algunos de los proyectos que he realizado'
+}
+
+export const card_contacto = {
+    img: 'url("https://picsum.photos/640/480/?category=nature")',
+    titulo: 'Contactame',
+    texto: 'Puedes contactarme por cualquiera de los siguientes medios, tratare de responder tan rapido como me sea posible'
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="mx-3">
         <div class="grid grid-cols-1 p-5 mb-10">
-            <CardImg></CardImg>
+            <CardImg :datos="_card_contacto"></CardImg>
         </div>
         <div class="grid grid-cols-1 mx-auto lg:mx-60 text-slate-300 text-sm md:text-lg">
             <div v-for="(item, index) in _datos_contacto" :key="index">
@@ -18,7 +18,7 @@
 import CardImg from '@/components/CardImg.vue';
 import CardInfo from '@/components/CardInfo.vue';
 import Card from '../components/Card.vue';
-import { datos_contacto } from '../DatosComponentes.js';
+import { datos_contacto, card_contacto } from '../DatosComponentes.js';
 export default {
     name: 'ContactoView',
     components: {
@@ -29,7 +29,7 @@ export default {
     data() {
         return {
             _datos_contacto: datos_contacto,
-            res: false
+            _card_contacto: card_contacto
         }
     }
 }
