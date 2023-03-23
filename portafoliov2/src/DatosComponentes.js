@@ -100,3 +100,30 @@ export const card_contacto = {
     titulo: 'Contactame',
     texto: 'Puedes contactarme por cualquiera de los siguientes medios, tratare de responder tan rapido como me sea posible'
 }
+
+export const datos_proyectos = [
+    {
+        img: require('./assets/proyectos/p1.png')
+    },
+    {
+        img: require('./assets/proyectos/p1.png')
+    },
+    {
+        img: require('./assets/proyectos/p1.png')
+    },
+    {
+        img: require('./assets/proyectos/p1.png')
+    },
+    {
+        img: require('./assets/lenin.jpg')
+    },
+    {
+        img: require('./assets/lenin.jpg')
+    },
+    {
+        img: require('./assets/lenin.jpg')
+    },
+    {
+        img: require('./assets/lenin.jpg')
+    },
+]
