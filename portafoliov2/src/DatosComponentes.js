@@ -96,7 +96,7 @@ export const card_proyectos = {
 }
 
 export const card_contacto = {
-    img: 'url("https://picsum.photos/640/480/?category=nature")',
+    img: 'url("https://picsum.photos/id/668/640/480?category=nature")',
     titulo: 'Contactame',
     texto: 'Puedes contactarme por cualquiera de los siguientes medios, tratare de responder tan rapido como me sea posible'
 }
