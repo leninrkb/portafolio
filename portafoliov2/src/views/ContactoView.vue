@@ -3,7 +3,7 @@
         <div v-for="(item, index) in _datos_contacto" :key="index"
             class="grid grid-cols-1 mx-auto lg:mx-60 text-slate-300 text-sm md:text-lg">
             <div class="col m-3">
-                <CardInfo :class="index % 2 == 0 ? 'float-right' : 'float-left' " :left="index % 2 == 0" :datos="item"></CardInfo>
+                <CardInfo :class="index % 2 == 0 ? 'float-left' : 'float-right' " :left="index % 2 == 0" :datos="item"></CardInfo>
             </div>
         </div>
     </div>

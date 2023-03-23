@@ -64,20 +64,20 @@ export const datos_contacto = [
         img:require('./assets/linkedin.svg'),
         estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-green-500',
         enlace:'https://www.linkedin.com/in/lenin-acosta',
-        texto:'Estoy en Linkedin!'
+        texto:'Estoy en Linkedin! '
     },
     {
         estilos_card:'bg-gray-500',
-        img:require('./assets/angular.svg'),
+        img:require('./assets/gmail.png'),
         estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-orange-500 ',
-        enlace:'https://www.linkedin.com/in/lenin-acosta',
-        texto:'Aqui tienes mi correo'
+        enlace:'mailto:rkb.lenin@gmail.com',
+        texto:'Aquí tienes mi correo '
     },
     {
         estilos_card:'bg-gray-500',
-        img:require('./assets/materializecss.svg'),
+        img:require('./assets/whatsapp.svg'),
         estilos_texto:'text-gray-900 decoration-slice underline decoration-gray-800 decoration-2 hover:text-cyan-500 ',
-        enlace:'https://www.linkedin.com/in/lenin-acosta',
-        texto:'O escribeme al wasap'
+        enlace:'https://wa.me/593959496570?text=Hola%20Lenin!%20he%20revisado%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo',
+        texto:'Escríbeme por WhatsApp '
     },
 ]
