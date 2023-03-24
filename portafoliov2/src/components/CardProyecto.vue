@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         habrirModal() {
-            console.log('habriendo modal...');
+            this.$emit('open',true)
         }
     },
 }
