@@ -32,8 +32,6 @@ export default {
     },
     data() {
         return {
-            parrafo: 'proyectos coming soon!!!',
-            img: require('../assets/logo.png'),
             _card_proyectos: card_proyectos,
             _datos_proyectos: datos_proyectos,
             mostrar: false,

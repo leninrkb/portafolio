@@ -110,8 +110,8 @@ export const datos_proyectos = [
         web:'enlace a la web'
     },
     {
-        img: require('./assets/proyectos/p1.png'),
-        titulo:'Algoritmo genetico para resolver problema de las ocho reinas',
+        img: require('./assets/proyectos/algoritmo_genetico_8_reinas/c1.png'),
+        titulo:'Algoritmo genético para resolver el problema de las ocho reinas',
         detalle:`Algoritmo genético en Java para resolver
          el problema de las ocho reinas, utilizando
           una población inicial, selección de aptitud, 
