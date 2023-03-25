@@ -103,27 +103,25 @@ export const card_contacto = {
 
 export const datos_proyectos = [
     {
-        img: require('./assets/proyectos/p1.png')
+        img: require('./assets/proyectos/p1.png'),
+        titulo:'Algoritmo A* para resolver rutas',
+        detalle:'bla bla bla bla bla bla bla bla',
+        github: 'enlace a github',
+        web:'enlace a la web'
     },
     {
-        img: require('./assets/proyectos/p1.png')
-    },
-    {
-        img: require('./assets/proyectos/p1.png')
-    },
-    {
-        img: require('./assets/proyectos/p1.png')
-    },
-    {
-        img: require('./assets/lenin.jpg')
-    },
-    {
-        img: require('./assets/lenin.jpg')
-    },
-    {
-        img: require('./assets/lenin.jpg')
-    },
-    {
-        img: require('./assets/lenin.jpg')
+        img: require('./assets/proyectos/p1.png'),
+        titulo:'Algoritmo genetico para resolver problema de las ocho reinas',
+        detalle:`Algoritmo genético en Java para resolver
+         el problema de las ocho reinas, utilizando
+          una población inicial, selección de aptitud, 
+          combinación de información genética y mutación. Es
+           una solución que demuestra 
+           habilidades en programación y resolución de problemas.
+            Tiene como objetivo reforzar los conocimientos en Java, 
+            Inteligencia Artificial y su aplicación en la resolución
+             de problemas clásicos de la teoría de la computación.`,
+        github: 'https://github.com/leninrkb/Algoritmo-genetico-para-8-reinas.git',
+        web:'no'
     },
 ]

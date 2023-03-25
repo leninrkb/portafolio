@@ -7,7 +7,7 @@
                 <img class="absolute w-1/3 top-1/4 left-1/3" src="../assets/eye.svg" alt="">
             </div>
         </div>
-        <h3 class="text-gray-400 text-base sm:text-xl  uppercase p-3">titulo del proyecto</h3>
+        <h3 class="text-gray-400 text-base sm:text-xl  uppercase p-3">titulo del proyecto {{datos.titulo}}</h3>
     </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
     },
     methods: {
         habrirModal() {
-            this.$emit('open',true)
+            let temporal = [true, this.datos]
+            this.$emit('open',temporal);
         }
     },
 }
