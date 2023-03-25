@@ -103,21 +103,10 @@ export const card_contacto = {
 
 export const datos_proyectos = [
     {
-        img: require('./assets/proyectos/p1.png'),
-        titulo:'Algoritmo A* para resolver rutas',
-        detalle:'bla bla bla bla bla bla bla bla',
-        github: 'enlace a github',
-        web:'enlace a la web'
-    },
-    {
         img: require('./assets/proyectos/algoritmo_genetico_8_reinas/c1.png'),
         titulo:'Algoritmo genético para resolver el problema de las ocho reinas',
         detalle:`Algoritmo genético en Java para resolver
-         el problema de las ocho reinas, utilizando
-          una población inicial, selección de aptitud, 
-          combinación de información genética y mutación. Es
-           una solución que demuestra 
-           habilidades en programación y resolución de problemas.
+         el problema de las ocho reinas.
             Tiene como objetivo reforzar los conocimientos en Java, 
             Inteligencia Artificial y su aplicación en la resolución
              de problemas clásicos de la teoría de la computación.`,
