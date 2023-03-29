@@ -90,13 +90,14 @@ export const datos_contacto = [
 ]
 
 export const card_proyectos = {
-    img: 'url("https://picsum.photos/640/480/?category=nature")',
+    img: `url(${require("../src/assets/bonsai.jpg")})`,
     titulo: 'Mis proyectos',
     texto: 'Estos son algunos de los proyectos que he realizado'
 }
 
 export const card_contacto = {
-    img: 'url("https://picsum.photos/id/668/640/480?category=nature")',
+    // img: 'url("https://picsum.photos/id/668/640/480?category=nature")',
+    img: `url(${require('../src/assets/interior.jpg')})`,
     titulo: 'Contactame',
     texto: 'Puedes contactarme por cualquiera de los siguientes medios, tratare de responder tan rapido como me sea posible'
 }
