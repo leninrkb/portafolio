@@ -12,6 +12,7 @@
         </div>
         <Modal v-if="mostrar" @close="recibirDatos">
             <CardDetalleProyecto :datos="_detalle_datos"></CardDetalleProyecto>
+            
         </Modal>    
     </div>
 </template>

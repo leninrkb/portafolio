@@ -113,4 +113,41 @@ export const datos_proyectos = [
         github: 'https://github.com/leninrkb/Algoritmo-genetico-para-8-reinas.git',
         web:'no'
     },
+    {
+        img: require('./assets/proyectos/algoritmos_puros_ia/c1.png'),
+        titulo:'Solución a selección de rutas por algoritmo genético, búsqueda informada y búsqueda no informada',
+        detalle:`Algoritmos de IA escritas en java para encontrar rutas posibles, 
+        la más óptima o una ruta con longitud específica
+         dada una clase Mapa que contenga la información
+          de las calles. `,
+        github: 'https://github.com/leninrkb/Algoritmos-puros-de-IA',
+        web:'no'
+    },
+    {
+        img: require('./assets/proyectos/scipts-python-data-augmentation/c1.png'),
+        titulo:'Script en python para data augmentation',
+        detalle:`He escrito algunos métodos que puedes usar
+        para hacer aumento de datos de imágenes. El objetivo es
+        prescindir de la parte donde se lee, guarda o trata una
+         imagen o directorios de imágenes.
+        Los métodos están parametrizados, toman la imagen/directorio
+         y los parámetros para modificarlas.`,
+        github: 'https://github.com/leninrkb/ScriptsPython',
+        web:'no'
+    },
+    {
+        img: require('./assets/proyectos/modelo-ann-prediccion-colores/c1.png'),
+        titulo:'Modelo con ANN para predicción de colores',
+        detalle:`Modelo con redes neuronales para la predicción de colores.
+         La red fue entrenada con un dataset de hasta 20 mil imágenes.
+          Los pesos los puedes descargar y usar verificando las dimensiones
+           de la ventana sobre las imágenes que se vaya a trabajar. 
+
+        Además, puedes encontrar una mini implementación con
+         opencv que detecta los colores del video captado por
+          tu cámara en tiempo online.
+        `,
+        github: 'https://github.com/leninrkb/Modelo-para-clasificacion-de-colores-ANN',
+        web:'https://www.kaggle.com/code/leninacosta/modelo-ann-reconocimiento-de-colores/notebook'
+    },
 ]
