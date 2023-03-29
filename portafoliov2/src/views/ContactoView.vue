@@ -1,7 +1,7 @@
 <template>
     <div class="mx-3">
         <div class="grid grid-cols-1 p-5 mb-10">
-            <CardImg :datos="_card_contacto"></CardImg>
+            <CardImg data-aos="fade-up" :datos="_card_contacto"></CardImg>
         </div>
         <div class="grid grid-cols-1 mx-auto lg:mx-60 text-slate-300 text-sm md:text-lg">
             <div v-for="(item, index) in _datos_contacto" :key="index">
