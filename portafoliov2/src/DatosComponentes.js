@@ -150,4 +150,21 @@ export const datos_proyectos = [
         github: 'https://github.com/leninrkb/Modelo-para-clasificacion-de-colores-ANN',
         web:'https://www.kaggle.com/code/leninacosta/modelo-ann-reconocimiento-de-colores/notebook'
     },
+    {
+        img: require('./assets/proyectos/encriptacion-aes/c1.png'),
+        titulo:'Implementación de encriptación AES en Vuejs',
+        detalle:`Es una implementación sencilla en 
+        donde puedes probar la web e inspeccionar 
+        el código  para comprender de mejor forma 
+        este tipo de seguridad.`,
+        github: 'https://github.com/leninrkb/Encriptacion-AES',
+        web:'https://leninrkb.github.io/Encriptacion-AES/'
+    },{
+        img: require('./assets/proyectos/bodegas-java/c1.png'),
+        titulo:'Control de bodegas con java',
+        detalle:`Proyecto web para simular el manejo de una
+         bodega simple utilizando servicios en java`,
+        github: 'https://github.com/leninrkb/bodegasJAVA',
+        web:'no'
+    },
 ]
