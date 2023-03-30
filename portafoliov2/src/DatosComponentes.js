@@ -54,7 +54,7 @@ export const presentacion = {
         mis habilidades, espero trabajemos en proyectos 
         emocionantes en el futuro!`,
     nombre: 'Lenin Acosta',
-    profesion: 'Ingeniero en software',
+    profesion: '---',
     estilos_img: 'w-1/4 h-1/4 grayscale'
 }
 
@@ -92,7 +92,7 @@ export const datos_contacto = [
 export const card_proyectos = {
     img: `url(${require("../src/assets/bonsai.jpg")})`,
     titulo: 'Mis proyectos',
-    texto: 'Estos son algunos de los proyectos que he realizado'
+    texto: 'Estos son algunos de los proyectos que he realizado a '
 }
 
 export const card_contacto = {
