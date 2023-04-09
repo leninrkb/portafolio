@@ -36,9 +36,7 @@
                             <MenuButton
                                 class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                 <span class="sr-only">Open user menu</span>
-                                <img class="h-8 w-8 rounded-full"
-                                    src="../assets/lenin.jpg"
-                                    alt="" />
+                                <img class="h-8 w-8 rounded-full" src="../assets/lenin.jpg" alt="" />
                             </MenuButton>
                         </div>
                         <!-- <transition enter-active-class="transition ease-out duration-100"
@@ -69,11 +67,24 @@
             </div>
         </div>
 
-        <DisclosurePanel class="sm:hidden">
+        <!-- <DisclosurePanel class="sm:hidden">
             <div class="space-y-1 px-2 pt-2 pb-3">
                 <DisclosureButton v-for="item in navigation" :key="item.name" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"  :aria-current="item.current ? 'page' : undefined">
                     <router-link :to="item.href">{{ item.name }}</router-link>
                 </DisclosureButton>
+            </div>
+        </DisclosurePanel> -->
+        <DisclosurePanel class="sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <div v-for="item in navigation" :key="item.name">
+                    <DisclosureButton @click="navegar(item.href)"
+                        :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"
+                        :aria-current="item.current ? 'page' : undefined">
+                        
+                        {{ item.name }}
+                    </DisclosureButton>
+
+                </div>
             </div>
         </DisclosurePanel>
     </Disclosure>
@@ -95,12 +106,14 @@ export default {
     name: 'Navbar',
     components: {
     },
-    mounted() {
-
-    },
     data() {
         return {
 
+        }
+    },
+    methods: {
+        navegar(href){
+            this.$router.push(href);
         }
     },
 }
