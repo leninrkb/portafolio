@@ -3,6 +3,7 @@
   <div class="container mx-auto mt-10">
     <router-view></router-view>
   </div>
+  <div class="h-40"></div>
   <Footer></Footer>
 </template>
 
