@@ -37,7 +37,7 @@
                                 @click="go2github"
                                 class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-gray-800">
                                 <!-- <span class="sr-only">Open user menu</span> -->
-                                <img class="h-10 w-10 rounded-full bg-sky-500 border-2 border-sky-700" src="../assets/github.svg" alt="" />
+                                <img class=" h-10 w-10 rounded-full bg-sky-500 border-2 border-sky-700" src="../assets/github.svg" alt="" />
                             </MenuButton>
                         </div>
                         <!-- <transition enter-active-class="transition ease-out duration-100"
