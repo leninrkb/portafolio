@@ -167,5 +167,13 @@ export const datos_proyectos = [
          bodega simple utilizando servicios en java`,
         github: 'https://github.com/leninrkb/bodegasJAVA',
         web:'no'
+    },{
+        img: require('./assets/proyectos/solucion_laberinto_busqueda_anchura/c1.png'),
+        titulo:'Algoritmo de búsqueda no informada por anchura',
+        detalle:`Solución en python para resolver laberintos utilizando búsqueda no informada por anchura.
+        Dado un laberinto mxn y  la función objetivo, genera un árbol de agentes hasta llegar a la función objetivo. Se obtiene métricas de tiempo de ejecución por ciclo y por el total de la ejecución, así como un log del uso de memoria.
+        `,
+        github: 'https://github.com/leninrkb/Algoritmo-busqueda-no-informada---anchura---colas',
+        web:'no'
     },
 ]
