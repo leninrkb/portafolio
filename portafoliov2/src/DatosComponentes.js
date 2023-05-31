@@ -176,4 +176,17 @@ export const datos_proyectos = [
         github: 'https://github.com/leninrkb/Algoritmo-busqueda-no-informada---anchura---colas',
         web:'no'
     },
+    {
+        img: require('./assets/proyectos/music_tag_editor/c1.png'),
+        titulo:'Editor de metadata con JS',
+        detalle:`Editor simple para visualizar la metadata de tus caciones. Si te gusta el cover de tus albums favoritos, puedes descargarlos con esta herramienta`,
+        github: 'https://github.com/leninrkb/music-tag-editor',
+        web:'https://leninrkb.github.io/music-tag-editor/'
+    },{
+        img: require('./assets/proyectos/wumpus/wumpus.png'),
+        titulo:'El mundo de wumpus en prolog',
+        detalle:`Implementacion de base de conocimientos y reglas para resolver el juego "el mundo de wumpus"`,
+        github: 'https://github.com/leninrkb/el-mundo-de-wumpus-en-prolog',
+        web:'no'
+    },
 ]
