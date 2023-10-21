@@ -45,18 +45,17 @@ export const datos_habilidades = [
 ]
 
 export const presentacion = {
-    img: require('./assets/lenin.jpg'),
-    parrafo: `Como apasionado de la tecnología, 
-        he desarrollado habilidades en lenguajes de 
-        programación como Python, Java y C#. 
-        Tengo experiencia en proyectos de escritorio, 
-        web e inteligencia artificial. ¡Es un placer compartir 
-        mis habilidades, espero trabajemos en proyectos 
-        emocionantes en el futuro!`,
-    nombre: 'Lenin Acosta',
-    profesion: '---',
-    estilos_img: 'w-1/4 h-1/4 grayscale'
-}
+  img: require("./assets/lenin.jpg"),
+  parrafo: `As a technology enthusiast, 
+  I have honed my skills primarily in Python, 
+  Java, C#, and Vue. I have experience in desktop, 
+  web, and artificial intelligence projects. It's a 
+  pleasure to share my skills, and I hope we can work 
+  together on exciting projects in the future!`,
+  nombre: "Lenin Acosta",
+  profesion: "Software engineer",
+  estilos_img: "w-1/4 h-1/4 grayscale",
+};
 
 export const datos_contacto = [
     {

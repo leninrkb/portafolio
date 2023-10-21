@@ -2,10 +2,10 @@
   <div class="mx-3">
     <div class="grid grid-cols-1 gap-3">
       <div class="col">
-        <span id="saludo1" class="font-mono text-slate-400 text-5xl">¡Hola👋!soy<br>
+        <span id="saludo1" class="font-mono text-slate-400 text-5xl">¡Hi👋! I'm<br>
         </span>
-        <span class="font-mono text-cyan-400 text-6xl">Lenin Acosta</span><br>
-        <span class="font-mono text-cyan-500 text-4xl">Jr Dev.</span>
+        <span class="font-mono text-cyan-400 text-6xl">Lenin</span><br>
+        <!-- <span class="font-mono text-cyan-500 text-4xl">Jr Dev.</span> -->
       </div>
       <div class="col mb-3">
         <Card data-aos="fade-right" :parrafo="datos_presentacion.parrafo" :subtitulo1="datos_presentacion.nombre"
