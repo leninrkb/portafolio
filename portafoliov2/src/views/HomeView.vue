@@ -14,8 +14,8 @@
         </Card>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10" v-for="item in datos_card_habilidades">
-      <div class="col">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10" >
+      <div class="col" v-for="item in datos_card_habilidades">
         <CardHabilidades :titulo="item.titulo" :parrafo="item.parrafo"
           :lista="item.lista">
         </CardHabilidades>
