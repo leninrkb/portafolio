@@ -14,20 +14,10 @@
         </Card>
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10" v-for="item in datos_card_habilidades">
       <div class="col">
-        <CardHabilidades :titulo="datos_card_habilidades[0].titulo" :parrafo="datos_card_habilidades[0].parrafo"
-          :lista="datos_card_habilidades[0].lista">
-        </CardHabilidades>
-      </div>
-      <div class="col">
-        <CardHabilidades :titulo="datos_card_habilidades[1].titulo" :parrafo="datos_card_habilidades[1].parrafo"
-          :lista="datos_card_habilidades[1].lista">
-        </CardHabilidades>
-      </div>
-      <div class="col">
-        <CardHabilidades :titulo="datos_card_habilidades[2].titulo" :parrafo="datos_card_habilidades[2].parrafo"
-          :lista="datos_card_habilidades[2].lista">
+        <CardHabilidades :titulo="item.titulo" :parrafo="item.parrafo"
+          :lista="item.lista">
         </CardHabilidades>
       </div>
     </div>
