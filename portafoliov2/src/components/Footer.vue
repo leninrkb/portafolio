@@ -11,8 +11,8 @@
 
                 </div>
                 <div class="col text-right mr-2 items-center mx-auto">
-                    <router-link class="inline-block mr-2 hover:border-sky-400 border-2 border-transparent rounded-md p-1" to="/contacto">Contacto</router-link>
-                    <router-link class="inline-block hover:border-green-400 border-2 border-transparent rounded-md p-1" to="/proyectos">Proyectos</router-link>
+                    <router-link class="inline-block mr-2 hover:border-sky-400 border-2 border-transparent rounded-md p-1" to="/contacto">Contact</router-link>
+                    <router-link class="inline-block hover:border-green-400 border-2 border-transparent rounded-md p-1" to="/proyectos">Projects</router-link>
                 </div>
             </div>
         </div>
