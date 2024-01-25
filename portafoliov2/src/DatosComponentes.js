@@ -63,8 +63,8 @@ export const datos_habilidades = [
             Researching to build fun.
         `,
         lista: [
-            { svg: require('./assets/tensorflow.svg'), nivel: '70%', estilo1: 'bg-gradient-to-t from-cyan-500 to-orange-500', estilo2: 'bg-green-400' },
-            { svg: require('./assets/opencv.jpeg'), nivel: '70%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/godot-logo.png'), nivel: '50%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
+            { svg: require('./assets/unity.png'), nivel: '50%', estilo1: 'bg-slate-600', estilo2: 'bg-green-400' },
         ]
     },
 ]
@@ -116,6 +116,16 @@ export const card_proyectos = {
 
 
 export const datos_proyectos = [
+    {
+        img: require('./assets/vehicle-plate-recognition.png'),
+        titulo: ' vehicle plate recognition with computer vision and cnn ',
+        detalle: `
+            Vehicle plate characters recognition using computer vision and CNN. 
+            UI was built with Flet.
+        `,
+        github: 'https://github.com/leninrkb/vehicle-plate-recognition.git',
+        web: 'no'
+    },
     {
         img: require('./assets/proyectos/algoritmo_genetico_8_reinas/c1.png'),
         titulo: 'Genetic algorithm to solve the eight queens problem',
